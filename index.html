@@ -1,7 +1,30 @@
 <!DOCTYPE html>
+<!- Please Excuse the fact my markup is horrible and this is hosted on github -->
+<!- It's like if Ravyn Spadesvixen made a website -->
+<!- Music by SiIvagunner "Rainbow Road - Kart DS" https://www.youtube.com/watch?v=rP0E8E20HQ4 -->
 <html>
 <body>
-<!- Music by SiIvagunner "Rainbow Road - Kart DS" https://www.youtube.com/watch?v=rP0E8E20HQ4 -->
+<audio loop id="music">
+    <source src="https://github.com/spadesvixen/spadesvixen.github.io/raw/refs/heads/main/assets/misc/Rainbow%20Road%20-%20Kart%20DS.mp3" type="audio/mpeg">
+</audio>
+
+<button id="mute"> Play Audio
+</button>
+
+<script>
+  var audio = document.getElementById("music");
+  var btn = document.getElementById("mute");
+
+  btn.onclick = function() {
+    if (audio.paused) {
+      audio.play();
+      btn.innerHTML = "Pause Audio";
+    } else {
+      audio.pause();
+      btn.innerHTML = "Play Audio";
+    }
+  };
+</script>
 <br>
 	<br>
 		<br>
@@ -11,9 +34,6 @@
 						<br>
 							<br>
            					 	<br>
-									<div style="text-align:center;"><span ><img src="https://raw.githubusercontent.com/spadesvixen/spadesvixen.github.io/refs/heads/main/assets/misc/funnyspin.gif" style="display: inline-block; vertical-align: bottom; margin-right: 5px; margin-left: 5px; text-align: center; width: 160px;" alt="funnyspin.gif"></span></span>
-<audio loop>
-    <source src="https://github.com/spadesvixen/spadesvixen.github.io/raw/refs/heads/main/assets/misc/Rainbow%20Road%20-%20Kart%20DS.mp3" type="audio/mpeg">
-</audio>
+									<div style="text-align:center;"><span ><img src="https://raw.githubusercontent.com/spadesvixen/spadesvixen.github.io/refs/heads/main/assets/misc/funnyspin.gif" style="display: inline-block; vertical-align: bottom; margin-right: 5px; margin-left: 5px; text-align: center; width: 160px;" alt="look at her go">
 </body>
 </html>
